@@ -80,6 +80,190 @@ img {
   border-radius: 12px;
 }
 
+/*out source*/
+
+/*Home logo*/
+/* === removing default button style ===*/
+.home-logo {
+  margin: 0 0 0 10px;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* button styling */
+.home-logo {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255, 255, 255, 0.6);
+  --animation-color: #37ff8b;
+  --fs-size: 2em;
+  background-color: #087f5b;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.home-logo:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}
+/*Search bar*/
+.group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  width: 700px;
+  margin: 0 40px;
+}
+
+.input {
+  height: auto;
+  line-height: 28px;
+  padding: 0 1rem;
+  width: 100%;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #d9e8d8;
+  color: #0d0c22;
+  box-shadow: 0 0 5px #c1d9bf, 0 0 0 10px #f5f5f5eb;
+  transition: 0.3s ease;
+}
+
+.input::placeholder {
+  color: #777;
+}
+
+.icon {
+  position: absolute;
+  left: 1rem;
+  fill: #777;
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Navigation button */
+
+.header {
+  position: relative;
+  height: auto;
+}
+
+.card {
+  background-color: #e4e4e4;
+  margin: auto;
+  width: 1200px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px #c4c4c4, -10px -10px 20px #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 4px;
+}
+
+.button {
+  background-color: #e4e4e4;
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 5px 5px 5px #c4c4c4, inset -5px -5px 5px #ffffff;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  box-shadow: none;
+}
+
+.svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.card .Login {
+  color: #3035cb;
+}
+
+.card .Login:hover {
+  background-color: #3035cb;
+  color: #e4e4e4;
+}
+
+.card .Login svg {
+  fill: #3035cb;
+}
+
+.card .Login:hover svg {
+  fill: #e4e4e4;
+}
+
+.card .Cart {
+  color: #333;
+}
+
+.card .Cart:hover {
+  background-color: #333;
+  color: #e4e4e4;
+}
+
+.card .Cart svg {
+  fill: #333;
+}
+
+.card .Cart:hover svg {
+  fill: #e4e4e4;
+}
+
+.card .Location {
+  color: #b82323;
+}
+
+.card .Location:hover {
+  background-color: #b82323;
+  color: #e4e4e4;
+}
+
+.card .Location svg {
+  fill: #b82323;
+}
+
+.card .Location:hover svg {
+  fill: #e4e4e4;
+}
+
 /* ------------------------ */
 /* COMPONENT STYLES */
 /* ------------------------ */
